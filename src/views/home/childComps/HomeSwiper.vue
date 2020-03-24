@@ -1,7 +1,7 @@
 <!-- 轮播图集中在这里，然后放进Home组件 -->
 <template>
   <swiper>
-    <swiper-item v-for="item in banners">
+    <swiper-item v-for="item in banners" :key="item.id">
       <a :href="item.link">
         <img :src="item.image" alt="">
       </a>
